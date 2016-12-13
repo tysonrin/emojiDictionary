@@ -14,86 +14,19 @@ class DefinitionViewController: UIViewController {
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var definitionLabel: UILabel!
     @IBOutlet weak var emojiLabel: UILabel!
-    var emoji = "NO EMOJI"
+    var emoji = Emoji()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        emojiLabel.text = emoji
+        emojiLabel.text = emoji.stringEmoji
+        birthYearLabel.text = "Birth Year: \(emoji.birthYear)"
+        categoryLabel.text = "Category: \(emoji.category)"
+        definitionLabel.text = emoji.definition
         
-        if emoji == "🦑" {
-            definitionLabel.text = "Giant Squid"
-            categoryLabel.text = "Category: Aquatic Animal"
-            birthYearLabel.text = "Birth Year: 2010"
-        }
-        
-        if emoji == "🐘" {
-            definitionLabel.text = "Elephant"
-            categoryLabel.text = "Category: Land Animal"
-            birthYearLabel.text = "Birth Year: 2010"
-        }
-        
-        if emoji == "🦍" {
-            definitionLabel.text = "Gorilla"
-        }
-        
-        if emoji == "🐊" {
-            definitionLabel.text = "Alligator"
-        }
-        
-        if emoji == "🐡" {
-            definitionLabel.text = "Blow Fish"
-        }
-        
-        if emoji == "🦅" {
-            definitionLabel.text = "Bald Eagle"
-        }
-        
-        if emoji == "🐜" {
-            definitionLabel.text = "Ant"
-        }
-        
-        if emoji == "🦈" {
-            definitionLabel.text = "Shark"
-        }
-        
-        if emoji == "🦎" {
-            definitionLabel.text = "Geico"
-        }
-        
-        if emoji == "🐙" {
-            definitionLabel.text = "Baby Squid"
-        }
-        
-        if emoji == "🦏" {
-            definitionLabel.text = "Rhino"
-        }
-        
-        if emoji == "🐋" {
-            definitionLabel.text = "Blue Whale"
-        }
-        
-        if emoji == "🦉" {
-            definitionLabel.text = "Owl"
-        }
-        
-        if emoji == "🦇" {
-            definitionLabel.text = "Bat"
-        }
-        
-        if emoji == "🦌" {
-            definitionLabel.text = "Buck"
-        }
-        
-        if emoji == "🐑" {
-            definitionLabel.text = "Big Horn Sheep"
-        }
-        
-        if emoji == "🦃" {
-            definitionLabel.text = "Turkey"
-        }
+       
         
         
         
